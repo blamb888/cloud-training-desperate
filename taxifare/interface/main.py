@@ -112,7 +112,7 @@ def train(
         gcp_project=GCP_PROJECT,
         query=query,
         cache_path=data_processed_cache_path,
-        data_has_header=False
+        data_has_header=True
     )
 
     if data_processed.shape[0] < 10:
